@@ -43,7 +43,7 @@
                       <a class="nav-link" href="{{route('home')}}">Buy</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Sell</a>
+                      <a class="nav-link" href="{{route('sellerLoginPage')}}">Sell</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link">Support</a>

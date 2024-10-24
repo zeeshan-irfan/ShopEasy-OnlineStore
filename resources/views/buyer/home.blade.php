@@ -108,7 +108,7 @@
 
           <div class="row my-auto">
             <div class="col-6 ">
-              <a href="#" class="btn  ">
+              <a href="{{route('single-product')}}" class="btn">
                 <img src="{{asset('storage/images/keyboard.jpg')}}" class="img-fluid " alt="img1">
                 <p class="fst-italic ">Keyboards</p>
               </a>
