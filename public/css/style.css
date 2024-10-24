@@ -1,0 +1,253 @@
+:root {
+    --main: #f5f5f5;
+    --orange: #f68712;
+    --blue: #3871c1;
+}
+
+* {
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+}
+
+body {
+    background-color: rgba(248, 249, 250, 1);
+}
+
+.enable-scroll::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.enable-scroll::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 0.5em;
+}
+
+.cart-links-items {
+    font-size: 20px;
+}
+
+.badge {
+    font-size: 10px;
+}
+
+.header {
+    background: url(../storage/images/bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header-container {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-nav .nav-link {
+    color: white;
+    margin: 2px 0;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link.active {
+    background-color: var(--blue);
+    color: white !important;
+}
+
+.heading-line::after {
+    background-color: var(--orange);
+    content: "";
+    display: block;
+    width: 90%;
+    height: 3px;
+    margin: 0 auto;
+}
+
+.main-headings {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main-headings::after {
+    background-color: var(--orange);
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin: 0 auto;
+}
+
+.banner-item h3 + p {
+    margin: 0;
+    padding: 0;
+}
+
+#BackCarousel img {
+    mask-image: linear-gradient(0deg, rgba(210, 215, 211, 0.01) 0%, rgba(210, 215, 211, 1) 20%);
+    -webkit-mask-image: linear-gradient(0deg, rgba(210, 215, 211, 0.01) 0%, rgba(210, 215, 211, 1) 20%);
+}
+
+#square-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.square-item {
+    background-color: rgba(236, 236, 236, 0.7);
+    transition: background-color 0.3s, border 0.3s;
+    text-align: center;
+    align-content: center;
+}
+
+.square-item i {
+    font-size: 60px;
+}
+
+.square-item i::after {
+    background-color: var(--blue);
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.square-item p {
+    font-size: 15px;
+}
+
+.square-item:hover {
+    background-color: rgba(132, 140, 207, 0.6);
+}
+
+.square-item:hover i {
+    color: var(--orange);
+}
+
+.square-item:hover p {
+    color: white;
+}
+
+#spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.accordion-button:hover {
+    background-color: var(--main);
+}
+
+#sideMenuAccordion .accordion-button {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    justify-content: center;
+}
+
+#sideMenuAccordion .accordion-button:not(.collapsed) {
+    background-color: #212529;
+}
+
+#sideMenuAccordion ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#sideMenuAccordion ul li a:hover,
+#sideMenuAccordion ul li .active {
+    color: white;
+    background-color: var(--blue);
+}
+
+.star-rating {
+    font-size: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating .bi-star-fill {
+    color: #ffc107 !important;
+}
+
+.truncate-4-lines {
+    display: block;
+    overflow: hidden;
+    max-height: calc(1em * 4);
+    line-height: 1;
+    position: relative;
+}
+.truncate-3-lines {
+    display: block;
+    overflow: hidden;
+    max-height: calc(1em * 3);
+    line-height: 1;
+    position: relative;
+}
+
+
+
+.truncate-4-lines::after {
+    content: '...';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    padding-left: 0px;
+}
+
+.cardbtnHover:hover {
+    color: white;
+    background-color: #212529;
+}
+
+.image-details .thumbnail-img , .review-thumbnails img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.image-details .main-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.image-details .thumbnail-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-side-info .sub-heading {
+    line-height: 1;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-side-info .view-heading {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.cart-item input[type='checkbox']{
+    border: 1px solid var(--orange);
+    width: 25px;
+    height: 25px;
+}
+
+.cart-item img{
+    
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
